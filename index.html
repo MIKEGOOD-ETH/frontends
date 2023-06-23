@@ -6,20 +6,21 @@
 </head>
 <body>
     <div class="header-container">
-        <div class="header-content">
-            <header>
-                <h1>NounsDAO Alt Front End Explorer ⌐◨-◨</h1>
-                <h3>For the Front-End Enthusiast: One place to view all of the Nounish front ends. Enjoy.</h3>
-            </header>
-        </div>
-        <div class="toggle-container">
-            <button id="toggle-button" onclick="toggleMode()">Toggle Mode to Dark</button>
-            <select id="filter-dropdown" onchange="filter()">
-                <option value="A-Z">A-Z</option>
-                <option value="By Votes">By Votes</option>
-            </select>
-        </div>
+    <div>
+        <img src="front-end-ring-noun-logo.png" alt="Header Image">
+        <header>
+            <h1>NounsDAO Alt Front End Explorer ⌐◨-◨</h1>
+            <h3>For the Front-End Enthusiast: One place to view all of the Nounish front ends. Enjoy.</h3>
+        </header>
     </div>
+    <div class="toggle-container">
+        <select id="filter-dropdown" onchange="sortIframes()">
+            <option value="default">Default</option>
+            <option value="az">A-Z</option>
+            <option value="votes">By Votes</option>
+        </select>
+    </div>
+</div>
     <div class="content-section">
         <div class="grid-container">
             <div class="iframe-wrapper">
