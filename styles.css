@@ -30,6 +30,16 @@ body {
 .header-container h3 {
     font-family: 'SF Pro Rounded', sans-serif;
 }
+.header-container div {
+    display: flex;
+    align-items: center;
+}
+
+.header-container img {
+    width: 40px; /* Adjust the width as desired */
+    height: 40px; /* Adjust the height as desired */
+    margin-right: 10px; /* Adjust the margin as desired */
+}
 
 .iframe-url {
     display: block;
