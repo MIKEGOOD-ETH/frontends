@@ -162,7 +162,7 @@ header p {
 }
 
 body.dark-mode #footer-text {
-  color: var(--white); /* or the light color you are using */
+  color: var(--white); /* or the light color you are using  */
 }
 
 @keyframes twinkling-sphere {
