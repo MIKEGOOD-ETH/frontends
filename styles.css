@@ -41,6 +41,17 @@ body {
     margin-right: 10px; /* Adjust the margin as desired */
 }
 
+header h1, header h3, header p {
+  clear: none;
+}
+
+#footer-text {
+  font-size: .8em; /* adjust as needed */
+  color: #000; /* adjust to match your header color */
+  padding: 10px; /* adjust as needed */
+  text-align: center; /* adjust as needed */
+}
+
 .iframe-url {
     display: block;
     font-weight: bold;
@@ -51,7 +62,10 @@ body {
 .toggle-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Add this line to horizontally center the button */
+    margin-top: 10px; /* Adjust the margin as desired */
 }
+
 
 .toggle-container button {
     background-color: #002B5C;
@@ -60,13 +74,8 @@ body {
     padding: 8px 12px;
     font-size: 1em;
     cursor: pointer;
-    margin-right: 10px;
 }
 
-#filter-dropdown {
-    padding: 6px;
-    font-size: 1em;
-}
 
 .content-section {
     padding: 20px;
@@ -99,6 +108,17 @@ body {
     background-color: #F5F7FA;
     margin-top: 10px;
 }
+
+.description .details {
+    font-size: 0.9em; /* Adjust the font size as desired */
+    color: #888; /* Adjust the color as desired */
+    margin-top: 5px; /* Add margin to separate it from the previous paragraph */
+}
+
+.description .details::before {
+    content: "↳ "; /* Unicode arrow character */
+}
+
 
 .vote-container {
     display: flex;
@@ -145,6 +165,10 @@ body {
     background-color: #333;
 }
 
+body.dark-mode #footer-text {
+  color: var(--white); /* or the light color you are using */
+}
+
 @keyframes twinkling-sphere {
     0% {
         opacity: 0;
@@ -183,3 +207,20 @@ body {
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add black shadow behind text */
 }
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-info {
+    margin-top: 10px; /* Add a margin to separate it from the image */
+    text-align: center; /* Center the text */
+}
+
+.header-info h3 {
+    max-width: 80%; /* Limit the maximum width of the text to 50% */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
