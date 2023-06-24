@@ -6,96 +6,112 @@
 </head>
 <body>
     <div class="header-container">
-        <div class="header-content">
             <header>
-                <h1>NounsDAO Alt Front End Explorer ⌐◨-◨</h1>
-                <h3>For the Front-End Enthusiast: One place to view all of the Nounish front ends. Enjoy.</h3>
+                <h1>NounsDAO Alt Front-End Explorer ⌐◨-◨</h1>
+                <div class="header-info">
+                    <h3>A running list of active NounsDAO front-ends.</h3>
+                </div>
+                <div class="toggle-container">
+                    <button id="toggle-button" onclick="toggleMode()">Toggle Mode to Dark</button>
+                </div>
             </header>
-        </div>
-        <div class="toggle-container">
-            <button id="toggle-button" onclick="toggleMode()">Toggle Mode to Dark</button>
-            <select id="filter-dropdown" onchange="filter()">
-                <option value="A-Z">A-Z</option>
-                <option value="By Votes">By Votes</option>
-            </select>
         </div>
     </div>
     <div class="content-section">
         <div class="grid-container">
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://nouns.wtf/vote" target="_blank">https://nouns.wtf/vote</a>
-                <iframe class="grid-item" src="https://nouns.wtf/vote"></iframe>
+                <a class="iframe-url" href="https://nouns.wtf" target="_blank">Nouns.wtf</a>
+                <iframe class="grid-item" src="https://nouns.wtf"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
+                    <p>The original NounsDAO front end. Developed by the Nounders. Auctions, voting, NounsDAO resources, links and more. </p>
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://nounsagora.com/" target="_blank">https://nounsagora.com/</a>
+                <a class="iframe-url" href="https://www.voter.wtf/" target="_blank">Voter.wtf</a>
+                <iframe class="grid-item" src="https://www.voter.wtf/"></iframe>
+                <div class="description">
+                    <p>Voter reason streams for each prop sortable by time submitted or split by For vs Against votes.</p> 
+                    <p class="details">Requested retro funding via proposal 314: 10e</p>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <a class="iframe-url" href="https://www.mmmogu.com/" target="_blank">MMMOGU.com</a>
+                <iframe class="grid-item" src="https://www.mmmogu.com/"></iframe>
+                <div class="description">
+                    <p>Searchable rss style feed for Nouns voting and bidding. Board that sorts by proposals and allows you to see who votes For or Against. It also shows who has not voted yet alongside which way they typically lean, For or Against, on proposals.</p>
+                    <p class="details">Unfunded.</p>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <a class="iframe-url" href="https://nounsagora.com/" target="_blank">NounsAgora.com/</a>
                 <iframe class="grid-item" src="https://nounsagora.com/"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                
+                    <p>Nouns voters profiles with delegation statements. On-chain and PropHouse voting records. Ability to auction and bid on votes.</p> 
+                    <p class="details">Funded via PropHouse Round: Nouns Governance Clients and Proposal 154. Total funding: 240e</p>
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://houseoflilnouns.wtf/nouns" target="_blank">https://houseoflilnouns.wtf/nouns</a>
-                <iframe class="grid-item" src="https://houseoflilnouns.wtf/nouns"></iframe>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
-                </div>
-            </div>
-            <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://voter.wtf" target="_blank">https://voter.wtf</a>
-                <iframe class="grid-item" src="https://voter.wtf"></iframe>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
-                </div>
-            </div>
-            <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://www.federation.wtf/" target="_blank">https://www.federation.wtf/</a>
+                <a class="iframe-url" href="https://www.federation.wtf/" target="_blank">Federation.wtf</a>
                 <iframe class="grid-item" src="https://www.federation.wtf/"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
+                    <p>Nouns Governance Pools: Bid on pooled Nouns token votes per proposal. Other various governance tools.</p>
+                    <p class="details">Funded via NounsDAO proposal 229. Lil nouns proposal 69, and PropHouse Mandated Governance Round. Total funding: 257e</p>
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://www.nounoclock.app/" target="_blank">https://www.nounoclock.app/</a>
+    <a class="iframe-url" href="https://houseofnouns.wtf/" target="_blank">HouseOfNouns.wtf</a>
+    <iframe class="grid-item" src="https://houseofnouns.wtf/"></iframe>
+    <div class="description">
+        <p>Sortable stream of On-chain Proposals with ability to comment. Ability to switch between NounsDAO and other Nounish DAOs.</p>
+        <p class="details">Funded via proposal 292 and PropHouse: Nouns Governance Clients for a total of 115e</p>
+    </div>
+</div>
+
+            <div class="iframe-wrapper">
+                <a class="iframe-url" href="https://www.nounoclock.app/" target="_blank">NounOClock.app/</a>
                 <iframe class="grid-item" src="https://www.nounoclock.app/"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
+                    <p>Bid on the current NounsDAO auction. Count down until the next auction. Live chat for the Nounish community and links to the daily Noun Square Twitter Space.</p>
+                    <p class="details">Funded 25e via PropHouse: Nouns Clients Proof of Concepts</p>       
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://nounspoap.com/" target="_blank">https://nounspoap.com/</a>
-                <iframe class="grid-item" src="https://nounspoap.com/"></iframe>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
-                </div>
-            </div>
-            <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://shenounigans.live/" target="_blank">https://shenounigans.live/</a>
+                <a class="iframe-url" href="https://shenounigans.live/" target="_blank">Shenounigans.live</a>
                 <iframe class="grid-item" src="https://shenounigans.live/"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
+                    <p>Daily auctions with live feed of on-chain actions via the “auctioneer,” with a live chat. Traits are displayed alongside each Noun.</p>
+                    <p class="details">Funded 25e via PropHouse: Nouns Clients Proof of Concepts</p>
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <a class="iframe-url" href="https://www.tally.xyz/gov/nounsdao" target="_blank">https://www.tally.xyz/gov/nounsdao</a>
-                <iframe class="grid-item" src="https://www.tally.xyz/gov/nounsdao"></iframe>
+                <a class="iframe-url" href="https://pronouns.gg/" target="_blank">Pronouns.gg</a>
+                <iframe class="grid-item" src="https://pronouns.gg/"></iframe>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nulla id dapibus auctor. Suspendisse consectetur risus nec neque rutrum, id laoreet ipsum interdum.</p>
-                    
+                    <p>View or bid on current auction. Breaks down traits, and trait floor for each Noun. Also displays book value and %-change from previous auction.</p>
+                    <p class="details">Funded 25e via PropHouse: Nouns Clients Proof of Concepts</p>
                 </div>
+            </div>
+            <div class="iframe-wrapper">
+                <a class="iframe-url" href="https://nounspoap.com/" target="_blank">NounsPoap.com</a>
+                <iframe class="grid-item" src="https://nounspoap.com/"></iframe>
+                <div class="description">
+                    <p>Daily auctions with claimable Poap for the top 5 bidders.</p>
+                    <p class="details">Funded via proposal 93 for 88e.</p>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <a class="iframe-url" href="https://nouns.sh/" target="_blank">Nouns.sh</a>
+                <iframe class="grid-item" src="https://nouns.sh/"></iframe>
+                <div class="description">
+                    <p>Data packed Nouns client. Currently down.</p>
+                    <p class="details">Funded 25e via PropHouse: Nouns Clients Proof of Concepts</p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <p id="footer-text"><em>Did I miss a front-end? Reach out on twitter: <a href="https://twitter.com/goodbeats">Mike Good (@goodbeats)</a></em></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
